@@ -1,0 +1,45 @@
+<div id="day{{ day_number }}" class="container border border-dark border-4 rounded-3 my-4">
+  <h2 class="mt-2">
+    <script
+      type="py"
+      src="script/display_name_day.py"
+      config="script/pyconfig.toml"
+      day_number="{{ day_number }}"
+    ></script>
+  </h2>
+  <div class="container">
+    {% for exercice in range(1, 3) %}
+      <div id="day{{ day_number }}-{{ exercice }}" class="mb-3">
+        <h4 class="text-primary">
+          <a href="{{ day_link }}"> >Exercice {{ exercice }} </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <script
+            type="py"
+            src="script/display_a_file.py"
+            config="script/pyconfig.toml"
+            file_to_display="day_{{ day_number }}-{{ exercice }}.txt"
+          ></script>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre class="rounded ps-2">
+            <script
+              type="py"
+              src="script/display_a_file.py"
+              config="script/pyconfig.toml"
+              file_to_display="day_{{ day_number }}-{{ exercice }}.py"
+            ></script>
+          </pre>
+          <script
+            type="py"
+            src="script/day_{{ day_number }}-{{ exercice }}.py"
+            config="script/pyconfig.toml"
+          >
+          </script>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

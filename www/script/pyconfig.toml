@@ -1,0 +1,16 @@
+[[fetch]]
+files = [
+    'day_1-1.txt',
+    'day_1-2.txt',
+    'names.json',
+]
+from = '../subjects'
+to_folder = 'data'
+
+[[fetch]]
+files = [
+    'day_1-1.py',
+    'day_1-2.py',
+]
+from = '../script'
+to_folder = 'data'

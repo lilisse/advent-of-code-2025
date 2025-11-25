@@ -1,0 +1,24 @@
+@font-face {
+    font-family: PressStart2P;
+    src: url(fonts/PressStart2P-Regular.ttf);
+}
+
+body {
+    font-family: PressStart2P;
+    background-color: #f0f8ff;
+}
+
+.spoiler {
+    filter: blur(5px);
+    transition-property: -webkit-filter;
+    transition-duration: 0.2s;
+}
+.spoiler:hover,
+.spoiler:focus {
+    filter: blur(0px);
+}
+
+pre {
+    background-color: #282a35;
+    color: white;
+}
