@@ -1,5 +1,4 @@
-{% extends 'base.html' %}
-{% block title %} Advent of code 2025 {% endblock %}
+{% extends 'base.html' %} {% block title %} Advent of code 2025 {% endblock %}
 {% block content %}
 <div class="container-fluid">
   <h1 class="text-center mt-4">Advent of code 2025</h1>
@@ -9,10 +8,7 @@
     like. People use them as interview prep, company training, university
     coursework, practice problems, a speed contest, or to challenge each other.
   </div>
-    {% for day in days %}
-      {% with day_number=loop.index, day_link=day["link"]%}
-        {% include 'day.html' %}
-      {% endwith %}
-    {% endfor %}
+  {% for day in days %} {% with day_number=loop.index, day_link=day["link"]%} {%
+  include 'day.html' %} {% endwith %} {% endfor %}
 </div>
 {% endblock %}
