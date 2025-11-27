@@ -1,5 +1,16 @@
 {% extends 'base.html' %} {% block title %} Advent of code 2025 {% endblock %}
-{% block content %}
+{% block js_and_css %}
+<script
+  type="py"
+  src="www/script/days/day_1.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_2.py"
+  config="www/script/pyconfig.toml"
+></script>
+{% endblock %} {% block content %}
 <div class="container-fluid">
   <h1 class="text-center mt-4">Advent of code 2025</h1>
   <div class="container">

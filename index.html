@@ -1,36 +1,46 @@
 <!doctype html>
 <html>
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <!-- PyScript CSS -->
-  <link
-    rel="stylesheet"
-    href="https://pyscript.net/releases/2025.11.1/core.css"
-  />
-  <!-- This script tag bootstraps PyScript -->
-  <script
-    type="module"
-    src="https://pyscript.net/releases/2025.11.1/core.js"
-  ></script>
-  <!-- Bootsrap-->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-  />
-  <!-- Perso -->
-  <link href="www/style/bases.css" rel="stylesheet" />
-   
-  <title> Advent of code 2025 </title>
-</head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<!-- PyScript CSS -->
+<link
+  rel="stylesheet"
+  href="https://pyscript.net/releases/2025.11.1/core.css"
+/>
+<!-- This script tag bootstraps PyScript -->
+<script
+  type="module"
+  src="https://pyscript.net/releases/2025.11.1/core.js"
+></script>
+<!-- Bootsrap-->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+<!-- Perso -->
+<link href="www/style/bases.css" rel="stylesheet" />
+<title> Advent of code 2025 </title>
+ 
+<script
+  type="py"
+  src="www/script/days/day_1.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_2.py"
+  config="www/script/pyconfig.toml"
+></script>
 
+  </head>
   <body>
     <div id="main">
 <div class="container-fluid">
@@ -45,14 +55,7 @@
   id="day1"
   class="container border border-dark border-4 rounded-3 my-4"
 >
-  <h2 class="mt-2">
-    <script
-      type="py"
-      src="www/script/display_name_day.py"
-      config="www/script/pyconfig.toml"
-      day_number="1"
-    ></script>
-  </h2>
+  <h2 class="mt-2" id="day-title-1"></h2>
   <div class="container">
     
     <div id="day1-1" class="mb-3">
@@ -60,29 +63,14 @@
         <a href="https://http.cat/images/404.jpg"> >Exercice 1 </a>
       </h4>
       <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
-      <div class="ms-4">
-        <script
-          type="py"
-          src="www/script/display_a_file.py"
-          config="www/script/pyconfig.toml"
-          file_to_display="day_1-1.txt"
-        ></script>
-      </div>
+      <div class="ms-4" id="state-1-1"></div>
       <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
       <div class="ms-4 spoiler">
-        <pre class="rounded ps-2">
-            <script
-              type="py"
-              src="www/script/display_a_file.py"
-              config="www/script/pyconfig.toml"
-              file_to_display="day_1-1.py"
-            ></script>
-          </pre>
-        <script
-          type="py"
-          src="www/script/day_1-1.py"
-          config="www/script/pyconfig.toml"
-        ></script>
+        <pre
+          class="rounded ps-2"
+          id="code-1-1"
+        ></pre>
+        <span id="result-1-1"></span>
       </div>
     </div>
     
@@ -91,34 +79,82 @@
         <a href="https://http.cat/images/404.jpg"> >Exercice 2 </a>
       </h4>
       <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
-      <div class="ms-4">
-        <script
-          type="py"
-          src="www/script/display_a_file.py"
-          config="www/script/pyconfig.toml"
-          file_to_display="day_1-2.txt"
-        ></script>
-      </div>
+      <div class="ms-4" id="state-1-2"></div>
       <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
       <div class="ms-4 spoiler">
-        <pre class="rounded ps-2">
-            <script
-              type="py"
-              src="www/script/display_a_file.py"
-              config="www/script/pyconfig.toml"
-              file_to_display="day_1-2.py"
-            ></script>
-          </pre>
-        <script
-          type="py"
-          src="www/script/day_1-2.py"
-          config="www/script/pyconfig.toml"
-        ></script>
+        <pre
+          class="rounded ps-2"
+          id="code-1-2"
+        ></pre>
+        <span id="result-1-2"></span>
       </div>
     </div>
     
   </div>
 </div>
+
+<!--
+Faire une seul scirpt pour les nom du jour (avec des id)
+Faire une seul scirpt pour le code (avec des id)
+Faire une seul scirpt pour les solution (avec des id)
+
+OU
++1
+Faire un script par jour mais avec des fonction dans utils
+et les mettre en debut de page
+-->
+    <div
+  id="day2"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-2"></h2>
+  <div class="container">
+    
+    <div id="day2-1" class="mb-3">
+      <h4 class="text-primary">
+        <a href="https://http.cat/images/500.jpg"> >Exercice 1 </a>
+      </h4>
+      <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+      <div class="ms-4" id="state-2-1"></div>
+      <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+      <div class="ms-4 spoiler">
+        <pre
+          class="rounded ps-2"
+          id="code-2-1"
+        ></pre>
+        <span id="result-2-1"></span>
+      </div>
+    </div>
+    
+    <div id="day2-2" class="mb-3">
+      <h4 class="text-primary">
+        <a href="https://http.cat/images/500.jpg"> >Exercice 2 </a>
+      </h4>
+      <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+      <div class="ms-4" id="state-2-2"></div>
+      <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+      <div class="ms-4 spoiler">
+        <pre
+          class="rounded ps-2"
+          id="code-2-2"
+        ></pre>
+        <span id="result-2-2"></span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!--
+Faire une seul scirpt pour les nom du jour (avec des id)
+Faire une seul scirpt pour le code (avec des id)
+Faire une seul scirpt pour les solution (avec des id)
+
+OU
++1
+Faire un script par jour mais avec des fonction dans utils
+et les mettre en debut de page
+-->
   
 </div>
 </div>
