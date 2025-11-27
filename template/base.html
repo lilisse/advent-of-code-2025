@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
-  {% include 'header.html' %}
+  <head>
+    {% include 'header.html' %} {% block js_and_css %} {% endblock %}
+  </head>
   <body>
     <div id="main">{% block content %}{% endblock %}</div>
   </body>

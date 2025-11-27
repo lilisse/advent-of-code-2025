@@ -1,4 +1,7 @@
 {
   "website_title": "Advent of code 2025",
-  "days": [{ "link": "https://http.cat/images/404.jpg" }]
+  "days": [
+    { "link": "https://http.cat/images/404.jpg" },
+    { "link": "https://http.cat/images/500.jpg" }
+  ]
 }

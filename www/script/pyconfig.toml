@@ -1,16 +1,16 @@
-[[fetch]]
-files = [
-    'day_1-1.txt',
-    'day_1-2.txt',
-    'names.json',
-]
-from = '../subjects'
-to_folder = 'data'
+[files]
+# Utils
+"/www/subjects/names.json" = "./names.json"
+"/www/script/utils/utils.py"= "./utils.py"
 
-[[fetch]]
-files = [
-    'day_1-1.py',
-    'day_1-2.py',
-]
-from = '../script'
-to_folder = 'data'
+# Day 1
+"/www/subjects/day_1-1.txt" = "./day_1_1.txt"
+"/www/subjects/day_1-2.txt" = "./day_1_2.txt"
+"/www/script/days/fragments/day_1-1.py" = "./day_1_1.py"
+"/www/script/days/fragments/day_1-2.py" = "./day_1_2.py"
+
+# Day 2
+"/www/subjects/day_2-1.txt" = "./day_2_1.txt"
+"/www/subjects/day_2-2.txt" = "./day_2_2.txt"
+"/www/script/days/fragments/day_2-1.py" = "./day_2_1.py"
+"/www/script/days/fragments/day_2-2.py" = "./day_2_2.py"
