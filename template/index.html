@@ -5,11 +5,11 @@
   src="www/script/days/day_1.py"
   config="www/script/pyconfig.toml"
 ></script>
-<script
+<!--<script
   type="py"
   src="www/script/days/day_2.py"
   config="www/script/pyconfig.toml"
-></script>
+></script>-->
 {% endblock %} {% block content %}
 <div class="container-fluid">
   <h1 class="text-center mt-4">Advent of code 2025</h1>
@@ -19,7 +19,10 @@
     like. People use them as interview prep, company training, university
     coursework, practice problems, a speed contest, or to challenge each other.
   </div>
-  {% for day in days %} {% with day_number=loop.index, day_link=day["link"]%} {%
-  include 'day.html' %} {% endwith %} {% endfor %}
+  {% for day in days %}
+    {% with day_number=loop.index, day_link_1=day["part_1"], day_link_2=day["part_2"] %}
+        {% include 'day.html' %}
+    {% endwith %}
+  {% endfor %}
 </div>
 {% endblock %}
