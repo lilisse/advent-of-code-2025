@@ -14,6 +14,3 @@ display_a_file("./day_1_2.txt", "state-1-2")
 display_a_file("./day_1_2.py", "code-1-2")
 display(result_ex_1, target="result-1-1")
 display(result_ex_2, target="result-1-2")
-
-# TODO: Faire des onglet pour chaque jour avec un menu
-# TODO: Faire un onglet pour "utils"
