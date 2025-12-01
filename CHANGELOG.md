@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Change css for link to add ">" before a link.
 - Change index page to add a tab for utils code.
 - Change index page to get tabs systems for days.
 - Change script system. Now we have 1 script per day. It's work on chrome and it's faster.
