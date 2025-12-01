@@ -14,5 +14,3 @@ display_a_file("./day_1_2.txt", "state-1-2")
 display_a_file("./day_1_2.py", "code-1-2")
 display(result_ex_1, target="result-1-1")
 display(result_ex_2, target="result-1-2")
-
-# TODO: Faire un onglet (le premier) pour expliquer le projet
