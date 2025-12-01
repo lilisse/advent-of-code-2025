@@ -3,6 +3,11 @@
 {% block js_and_css %}
 <script
   type="py"
+  src="www/script/display_utils.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
   src="www/script/days/day_1.py"
   config="www/script/pyconfig.toml"
 ></script>
@@ -40,6 +45,18 @@
           Day {{ loop.index }}
         </button>
       {% endfor %}
+      <button
+        class="nav-link"
+        id="nav-utils-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#nav-utils"
+        type="button"
+        role="tab"
+        aria-controls="nav-utils"
+        aria-selected="true"
+      >
+        Utils
+      </button>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
@@ -58,6 +75,28 @@
         {% endwith %}
       </div>
     {% endfor %}
+    <div
+      class="tab-pane fade"
+      id="nav-utils"
+      role="tabpanel"
+      aria-labelledby="nav-utils-tab"
+    >
+      <div
+        class="container border border-dark border-4 rounded-3 my-4"
+      >
+        <h2 class="mt-2" id="utils-title"></h2>
+        <div class="container">
+          <div class="mb-3">
+            <div class="ms-4 spoiler">
+              <pre
+                class="rounded ps-2"
+                id="code-utils"
+              ></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
