@@ -28,12 +28,24 @@
   </div>
   <nav>
     <div class="nav nav-tabs container mt-3" role="tablist">
+      <button
+        class="nav-link show active"
+        id="nav-presentation-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#nav-presentation"
+        type="button"
+        role="tab"
+        aria-controls="nav-presentation"
+        aria-selected="true"
+      >
+        Presentation
+      </button>
       {% for day in days %}
-        {% if loop.index0 == 0 %}
+        {#{% if loop.index0 == 0 %}
           {% set active_class = "show active" %}
-        {% endif %}
+        {% endif %}#}
         <button
-          class="nav-link {{ active_class }}"
+          class="nav-link"
           id="nav-day{{loop.index}}-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-day{{loop.index}}"
@@ -60,12 +72,43 @@
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
-    {% for day in days %}
-      {% if loop.index0 == 0 %}
-        {% set active_class = "show active" %}
-      {% endif %}
+    <div
+      class="tab-pane fade show active"
+      id="nav-presentation"
+      role="tabpanel"
+      aria-labelledby="nav-presentation-tab"
+    >
       <div
-        class="tab-pane fade {{ active_class }}"
+        class="container border border-dark border-4 rounded-3 my-4"
+      >
+        <h2 class="mt-2">Presentation</h2>
+        <p>
+          The purpose of this site is to showcase my
+          <a href="https://adventofcode.com/">Advent of Code 2025</a>
+          project.
+          The entire site is static and built without JavaScript, using only client-side
+          Python thanks to
+          <a href="https://pyscript.net/">PyScript</a>.
+          This framework allows Python code to be executed in the browser via
+          <a href="https://webassembly.org/">WebAssembly (WASM)</a>
+          , offering an alternative to JavaScript.
+          Each puzzle is therefore solved and displayed using Python executed locally.
+        </p>
+        <p>
+          An anti-spoiler tagging system allows you to navigate without the risk of
+          inadvertently discovering solutions.
+        </p>
+        <p>
+          Feel free to explore the different solutions on offer.
+        </p>
+      </div>
+    </div>
+    {% for day in days %}
+      {#{% if loop.index0 == 0 %}
+        {% set active_class = "show active" %}
+      {% endif %}#}
+      <div
+        class="tab-pane fade"
         id="nav-day{{loop.index}}"
         role="tabpanel"
         aria-labelledby="nav-day{{loop.index}}-tab"
