@@ -7,10 +7,13 @@
     {% for exercice in range(1, 3) %}
     <div id="day{{ day_number }}-{{ exercice }}" class="mb-3">
       <h4 class="text-primary">
-        <a href="{{ day_link }}"> >Exercice {{ exercice }} </a>
+        {% set exercice_link = day_link_1 if exercice == 1 else day_link_2 %}
+        <a href="{{ exercice_link }}"> >Exercice {{ exercice }} </a>
       </h4>
       <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
-      <div class="ms-4" id="state-{{ day_number }}-{{ exercice }}"></div>
+      <div class="ms-4">
+        <p id="state-{{ day_number }}-{{ exercice }}"></p>
+      </div>
       <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
       <div class="ms-4 spoiler">
         <pre
@@ -23,14 +26,3 @@
     {% endfor %}
   </div>
 </div>
-
-<!--
-Faire une seul scirpt pour les nom du jour (avec des id)
-Faire une seul scirpt pour le code (avec des id)
-Faire une seul scirpt pour les solution (avec des id)
-
-OU
-+1
-Faire un script par jour mais avec des fonction dans utils
-et les mettre en debut de page
--->
