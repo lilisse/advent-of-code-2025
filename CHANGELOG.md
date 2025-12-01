@@ -11,8 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add solutions for day 1
 - Add a page to display exercices of [advent of code 2025](https://adventofcode.com/)
 
 ### Changed
 
+- Change index page to get tabs systems for days.
 - Change script system. Now we have 1 script per day. It's work on chrome and it's faster.
