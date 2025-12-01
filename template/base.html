@@ -1,10 +1,13 @@
 <!doctype html>
 <html>
   <head>
-    {% include 'header.html' %} {% block js_and_css %} {% endblock %}
+    {% include 'header.html' %}
+    {% block js_and_css %} {% endblock %}
   </head>
   <body>
-    <div id="main">{% block content %}{% endblock %}</div>
+    <div id="main">
+      {% block content %}{% endblock %}
+    </div>
   </body>
   {% include 'footer.html' %}
 </html>
