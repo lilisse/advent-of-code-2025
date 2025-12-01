@@ -22,3 +22,7 @@ pre {
     background-color: #282a35;
     color: white;
 }
+
+a::before {
+    content: ">";
+}
