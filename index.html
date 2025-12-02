@@ -41,6 +41,12 @@
   config="www/script/pyconfig.toml"
 ></script>
 
+<script
+  type="py"
+  src="www/script/days/day_2.py"
+  config="www/script/pyconfig.toml"
+></script>
+
 
   </head>
   <body>
@@ -69,7 +75,6 @@
         Presentation
       </button>
       
-        
         <button
           class="nav-link"
           id="nav-day1-tab"
@@ -81,6 +86,19 @@
           aria-selected="true"
         >
           Day 1
+        </button>
+      
+        <button
+          class="nav-link"
+          id="nav-day2-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day2"
+          type="button"
+          role="tab"
+          aria-controls="nav-day2"
+          aria-selected="true"
+        >
+          Day 2
         </button>
       
       <button
@@ -104,33 +122,27 @@
       role="tabpanel"
       aria-labelledby="nav-presentation-tab"
     >
-      <div
-        class="container border border-dark border-4 rounded-3 my-4"
-      >
+      <div class="container border border-dark border-4 rounded-3 my-4">
         <h2 class="mt-2">Presentation</h2>
         <p>
           The purpose of this site is to showcase my
           <a href="https://adventofcode.com/">Advent of Code 2025</a>
-          project.
-          The entire site is static and built without JavaScript, using only client-side
-          Python thanks to
-          <a href="https://pyscript.net/">PyScript</a>.
-          This framework allows Python code to be executed in the browser via
+          project. The entire site is static and built without JavaScript, using
+          only client-side Python thanks to
+          <a href="https://pyscript.net/">PyScript</a>. This framework allows
+          Python code to be executed in the browser via
           <a href="https://webassembly.org/">WebAssembly (WASM)</a>
-          , offering an alternative to JavaScript.
-          Each puzzle is therefore solved and displayed using Python executed locally.
+          , offering an alternative to JavaScript. Each puzzle is therefore
+          solved and displayed using Python executed locally in your browser.
         </p>
         <p>
-          An anti-spoiler tagging system allows you to navigate without the risk of
-          inadvertently discovering solutions.
+          An anti-spoiler tagging system allows you to navigate without the risk
+          of inadvertently discovering solutions.
         </p>
-        <p>
-          Feel free to explore the different solutions on offer.
-        </p>
+        <p>Feel free to explore the different solutions on offer.</p>
       </div>
     </div>
     
-      
       <div
         class="tab-pane fade"
         id="nav-day1"
@@ -189,23 +201,76 @@
         
       </div>
     
+      <div
+        class="tab-pane fade"
+        id="nav-day2"
+        role="tabpanel"
+        aria-labelledby="nav-day2-tab"
+      >
+        
+          <div
+  id="day2"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-2"></h2>
+  <div class="container">
+    
+      <div id="day2-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/2">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-2-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-2-1"
+          ></pre>
+          <span id="result-2-1"></span>
+        </div>
+      </div>
+    
+      <div id="day2-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/2#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-2-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-2-2"
+          ></pre>
+          <span id="result-2-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
     <div
       class="tab-pane fade"
       id="nav-utils"
       role="tabpanel"
       aria-labelledby="nav-utils-tab"
     >
-      <div
-        class="container border border-dark border-4 rounded-3 my-4"
-      >
+      <div class="container border border-dark border-4 rounded-3 my-4">
         <h2 class="mt-2" id="utils-title"></h2>
         <div class="container">
           <div class="mb-3">
             <div class="ms-4 spoiler">
-              <pre
-                class="rounded ps-2"
-                id="code-utils"
-              ></pre>
+              <pre class="rounded ps-2" id="code-utils"></pre>
             </div>
           </div>
         </div>
