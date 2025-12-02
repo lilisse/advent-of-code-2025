@@ -1,13 +1,18 @@
 from day_2_1 import solve as solve_ex_1
 from day_2_2 import solve as solve_ex_2
 from pyscript import display
-from utils import display_a_file, display_day_name, parse_input
+from utils import (
+    display_a_file,
+    display_day_name,
+    get_content_of_input,
+    parse_input_coma,
+)
 
 result_ex_1 = solve_ex_1(
-    parse_input("Host\nit\nsomewhere,\nand\ndecompress\nit\ninto\nthe\nhome\ndirectory")
+    parse_input_coma(get_content_of_input("./input_2.txt"))
 )
 result_ex_2 = solve_ex_2(
-    parse_input("Writing\nto\na\ntext\nfile.")
+    parse_input_coma(get_content_of_input("./input_2.txt"))
 )
 
 

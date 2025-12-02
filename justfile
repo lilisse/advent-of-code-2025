@@ -4,5 +4,5 @@ server:
     python3 -m http.server
 
 # Generate index.html from template with jinja2-cli
-gen_html:
+gen-html:
     jinja2 template/index.html template/data.json -o index.html

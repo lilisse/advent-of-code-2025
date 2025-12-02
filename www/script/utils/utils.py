@@ -7,13 +7,16 @@ def get_content_of_input(file_path: str) -> str:
     with open(file_path, "r") as input_file:
         return input_file.read()
 
-def parse_input(content: str) -> list[str]:
+def parse_input_eol(content: str) -> list[str]:
     return content.split("\n")
+
+def parse_input_coma(input: str) -> list[str]:
+    return input.split(",")
 
 def display_a_file(file_name: str, target: str) -> None:
     with open(file_name, "r") as subject:
         if file_name.endswith(".txt"):
-            for line in parse_input(subject.read()):
+            for line in parse_input_eol(subject.read()):
                 display(line, target=target, append=True)
         else:
             display(subject.read(), target=target)
