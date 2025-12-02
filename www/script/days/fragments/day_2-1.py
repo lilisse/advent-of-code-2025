@@ -6,16 +6,12 @@ def get_product_ids(parsed_input: list[str]) -> list[str]:
         for num in range(start, end + 1)
     ]
 
-#  Raccourcire
 def solve(parsed_input: list[str]) -> int:
-    product_ids = get_product_ids(parsed_input)
-    result = 0
-
-    for product_id in product_ids:
+    return sum(
+        int(pid)
+        for pid in get_product_ids(parsed_input)
         if (
-            len(product_id) % 2 == 0 and
-            product_id[:len(product_id)//2] == product_id[len(product_id)//2:]
-        ):
-            result += int(product_id)
-
-    return result
+            len(pid) % 2 == 0 and
+            pid[:len(pid)//2] == pid[len(pid)//2:]
+        )
+    )
