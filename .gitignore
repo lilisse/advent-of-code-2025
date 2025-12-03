@@ -1,5 +1,6 @@
 # Project specific stuff
 venv*
+test.py
 
 # Node.js stuff
 node_modules
