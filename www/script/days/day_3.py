@@ -1,5 +1,6 @@
 from day_3_1 import solve as solve_ex_1
 from day_3_2 import solve as solve_ex_2
+from loading import moved_progress_bar
 from pyscript import display
 from utils import (
     display_a_file,
@@ -19,3 +20,5 @@ display_a_file("./day_3_2.txt", "state-3-2")
 display_a_file("./day_3_2.py", "code-3-2")
 display(result_ex_1, target="result-3-1")
 display(result_ex_2, target="result-3-2")
+
+moved_progress_bar(3)

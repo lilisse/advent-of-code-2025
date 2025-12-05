@@ -1,11 +1,5 @@
-{% extends 'base.html' %}
-{% block title %} Advent of code 2025 {% endblock %}
+{% extends 'base.html' %} {% block title %} Advent of code 2025 {% endblock %}
 {% block js_and_css %}
-<script
-  type="py"
-  src="www/script/display_utils.py"
-  config="www/script/pyconfig.toml"
-></script>
 <script
   type="py"
   src="www/script/days/day_1.py"
@@ -31,6 +25,52 @@
   src="www/script/days/day_5.py"
   config="www/script/pyconfig.toml"
 ></script>
+<script
+  type="py"
+  src="www/script/days/day_6.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_7.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_8.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_9.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_10.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_11.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_12.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/display_utils.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/loading.py"
+  config="www/script/pyconfig.toml"
+  defer
+></script>
 {% endblock %}
 {% block content %}
 <div class="container-fluid">
@@ -41,10 +81,26 @@
     like. People use them as interview prep, company training, university
     coursework, practice problems, a speed contest, or to challenge each other.
   </div>
+  <div id="progress-bar" class="container my-3">
+    <h5>Loading scripts:</h5>
+    <div class="progress">
+      <div
+        id="loading-progress-bar"
+        class="progress-bar bg-info"
+        role="progressbar"
+        aria-valuenow="1"
+        aria-valuemin="0"
+        aria-valuemax="14"
+        style="width: 7.14%"
+      >
+        loading...
+      </div>
+    </div>
+  </div>
   <nav>
     <div class="nav nav-tabs container mt-3" role="tablist">
       <button
-        class="nav-link show active"
+        class="nav-link show active border"
         id="nav-presentation-tab"
         data-bs-toggle="tab"
         data-bs-target="#nav-presentation"
@@ -57,7 +113,7 @@
       </button>
       {% for day in days %}
         <button
-          class="nav-link"
+          class="nav-link border"
           id="nav-day{{loop.index}}-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-day{{loop.index}}"
@@ -65,12 +121,13 @@
           role="tab"
           aria-controls="nav-day{{loop.index}}"
           aria-selected="true"
+          disabled
         >
           Day {{ loop.index }}
         </button>
       {% endfor %}
       <button
-        class="nav-link"
+        class="nav-link border"
         id="nav-utils-tab"
         data-bs-toggle="tab"
         data-bs-target="#nav-utils"
@@ -78,6 +135,7 @@
         role="tab"
         aria-controls="nav-utils"
         aria-selected="true"
+        disabled
       >
         Utils
       </button>

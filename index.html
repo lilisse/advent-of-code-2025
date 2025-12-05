@@ -32,11 +32,6 @@
     
 <script
   type="py"
-  src="www/script/display_utils.py"
-  config="www/script/pyconfig.toml"
-></script>
-<script
-  type="py"
   src="www/script/days/day_1.py"
   config="www/script/pyconfig.toml"
 ></script>
@@ -60,6 +55,52 @@
   src="www/script/days/day_5.py"
   config="www/script/pyconfig.toml"
 ></script>
+<script
+  type="py"
+  src="www/script/days/day_6.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_7.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_8.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_9.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_10.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_11.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/days/day_12.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/display_utils.py"
+  config="www/script/pyconfig.toml"
+></script>
+<script
+  type="py"
+  src="www/script/loading.py"
+  config="www/script/pyconfig.toml"
+  defer
+></script>
 
   </head>
   <body>
@@ -73,10 +114,26 @@
     like. People use them as interview prep, company training, university
     coursework, practice problems, a speed contest, or to challenge each other.
   </div>
+  <div id="progress-bar" class="container my-3">
+    <h5>Loading scripts:</h5>
+    <div class="progress">
+      <div
+        id="loading-progress-bar"
+        class="progress-bar bg-info"
+        role="progressbar"
+        aria-valuenow="1"
+        aria-valuemin="0"
+        aria-valuemax="14"
+        style="width: 7.14%"
+      >
+        loading...
+      </div>
+    </div>
+  </div>
   <nav>
     <div class="nav nav-tabs container mt-3" role="tablist">
       <button
-        class="nav-link show active"
+        class="nav-link show active border"
         id="nav-presentation-tab"
         data-bs-toggle="tab"
         data-bs-target="#nav-presentation"
@@ -89,7 +146,7 @@
       </button>
       
         <button
-          class="nav-link"
+          class="nav-link border"
           id="nav-day1-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-day1"
@@ -97,12 +154,13 @@
           role="tab"
           aria-controls="nav-day1"
           aria-selected="true"
+          disabled
         >
           Day 1
         </button>
       
         <button
-          class="nav-link"
+          class="nav-link border"
           id="nav-day2-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-day2"
@@ -110,12 +168,13 @@
           role="tab"
           aria-controls="nav-day2"
           aria-selected="true"
+          disabled
         >
           Day 2
         </button>
       
         <button
-          class="nav-link"
+          class="nav-link border"
           id="nav-day3-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-day3"
@@ -123,12 +182,13 @@
           role="tab"
           aria-controls="nav-day3"
           aria-selected="true"
+          disabled
         >
           Day 3
         </button>
       
         <button
-          class="nav-link"
+          class="nav-link border"
           id="nav-day4-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-day4"
@@ -136,12 +196,13 @@
           role="tab"
           aria-controls="nav-day4"
           aria-selected="true"
+          disabled
         >
           Day 4
         </button>
       
         <button
-          class="nav-link"
+          class="nav-link border"
           id="nav-day5-tab"
           data-bs-toggle="tab"
           data-bs-target="#nav-day5"
@@ -149,12 +210,111 @@
           role="tab"
           aria-controls="nav-day5"
           aria-selected="true"
+          disabled
         >
           Day 5
         </button>
       
+        <button
+          class="nav-link border"
+          id="nav-day6-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day6"
+          type="button"
+          role="tab"
+          aria-controls="nav-day6"
+          aria-selected="true"
+          disabled
+        >
+          Day 6
+        </button>
+      
+        <button
+          class="nav-link border"
+          id="nav-day7-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day7"
+          type="button"
+          role="tab"
+          aria-controls="nav-day7"
+          aria-selected="true"
+          disabled
+        >
+          Day 7
+        </button>
+      
+        <button
+          class="nav-link border"
+          id="nav-day8-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day8"
+          type="button"
+          role="tab"
+          aria-controls="nav-day8"
+          aria-selected="true"
+          disabled
+        >
+          Day 8
+        </button>
+      
+        <button
+          class="nav-link border"
+          id="nav-day9-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day9"
+          type="button"
+          role="tab"
+          aria-controls="nav-day9"
+          aria-selected="true"
+          disabled
+        >
+          Day 9
+        </button>
+      
+        <button
+          class="nav-link border"
+          id="nav-day10-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day10"
+          type="button"
+          role="tab"
+          aria-controls="nav-day10"
+          aria-selected="true"
+          disabled
+        >
+          Day 10
+        </button>
+      
+        <button
+          class="nav-link border"
+          id="nav-day11-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day11"
+          type="button"
+          role="tab"
+          aria-controls="nav-day11"
+          aria-selected="true"
+          disabled
+        >
+          Day 11
+        </button>
+      
+        <button
+          class="nav-link border"
+          id="nav-day12-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-day12"
+          type="button"
+          role="tab"
+          aria-controls="nav-day12"
+          aria-selected="true"
+          disabled
+        >
+          Day 12
+        </button>
+      
       <button
-        class="nav-link"
+        class="nav-link border"
         id="nav-utils-tab"
         data-bs-toggle="tab"
         data-bs-target="#nav-utils"
@@ -162,6 +322,7 @@
         role="tab"
         aria-controls="nav-utils"
         aria-selected="true"
+        disabled
       >
         Utils
       </button>
@@ -476,6 +637,412 @@
             id="code-5-2"
           ></pre>
           <span id="result-5-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
+      <div
+        class="tab-pane fade"
+        id="nav-day6"
+        role="tabpanel"
+        aria-labelledby="nav-day6-tab"
+      >
+        
+          <div
+  id="day6"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-6"></h2>
+  <div class="container">
+    
+      <div id="day6-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/6">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-6-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-6-1"
+          ></pre>
+          <span id="result-6-1"></span>
+        </div>
+      </div>
+    
+      <div id="day6-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/6#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-6-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-6-2"
+          ></pre>
+          <span id="result-6-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
+      <div
+        class="tab-pane fade"
+        id="nav-day7"
+        role="tabpanel"
+        aria-labelledby="nav-day7-tab"
+      >
+        
+          <div
+  id="day7"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-7"></h2>
+  <div class="container">
+    
+      <div id="day7-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/7">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-7-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-7-1"
+          ></pre>
+          <span id="result-7-1"></span>
+        </div>
+      </div>
+    
+      <div id="day7-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/7#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-7-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-7-2"
+          ></pre>
+          <span id="result-7-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
+      <div
+        class="tab-pane fade"
+        id="nav-day8"
+        role="tabpanel"
+        aria-labelledby="nav-day8-tab"
+      >
+        
+          <div
+  id="day8"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-8"></h2>
+  <div class="container">
+    
+      <div id="day8-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/8">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-8-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-8-1"
+          ></pre>
+          <span id="result-8-1"></span>
+        </div>
+      </div>
+    
+      <div id="day8-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/8#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-8-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-8-2"
+          ></pre>
+          <span id="result-8-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
+      <div
+        class="tab-pane fade"
+        id="nav-day9"
+        role="tabpanel"
+        aria-labelledby="nav-day9-tab"
+      >
+        
+          <div
+  id="day9"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-9"></h2>
+  <div class="container">
+    
+      <div id="day9-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/9">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-9-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-9-1"
+          ></pre>
+          <span id="result-9-1"></span>
+        </div>
+      </div>
+    
+      <div id="day9-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/9#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-9-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-9-2"
+          ></pre>
+          <span id="result-9-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
+      <div
+        class="tab-pane fade"
+        id="nav-day10"
+        role="tabpanel"
+        aria-labelledby="nav-day10-tab"
+      >
+        
+          <div
+  id="day10"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-10"></h2>
+  <div class="container">
+    
+      <div id="day10-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/10">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-10-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-10-1"
+          ></pre>
+          <span id="result-10-1"></span>
+        </div>
+      </div>
+    
+      <div id="day10-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/10#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-10-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-10-2"
+          ></pre>
+          <span id="result-10-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
+      <div
+        class="tab-pane fade"
+        id="nav-day11"
+        role="tabpanel"
+        aria-labelledby="nav-day11-tab"
+      >
+        
+          <div
+  id="day11"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-11"></h2>
+  <div class="container">
+    
+      <div id="day11-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/11">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-11-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-11-1"
+          ></pre>
+          <span id="result-11-1"></span>
+        </div>
+      </div>
+    
+      <div id="day11-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/11#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-11-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-11-2"
+          ></pre>
+          <span id="result-11-2"></span>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+        
+      </div>
+    
+      <div
+        class="tab-pane fade"
+        id="nav-day12"
+        role="tabpanel"
+        aria-labelledby="nav-day12-tab"
+      >
+        
+          <div
+  id="day12"
+  class="container border border-dark border-4 rounded-3 my-4"
+>
+  <h2 class="mt-2" id="day-title-12"></h2>
+  <div class="container">
+    
+      <div id="day12-1" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/12">Exercice 1 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-12-1"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-12-1"
+          ></pre>
+          <span id="result-12-1"></span>
+        </div>
+      </div>
+    
+      <div id="day12-2" class="mb-3">
+        <h4 class="text-primary">
+          
+          <a href="https://adventofcode.com/2025/day/12#part2">Exercice 2 </a>
+        </h4>
+        <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
+        <div class="ms-4">
+          <p id="state-12-2"></p>
+        </div>
+        <h5 class="ms-2 text-decoration-underline text-success">Solution</h5>
+        <div class="ms-4 spoiler">
+          <pre
+            class="rounded ps-2"
+            id="code-12-2"
+          ></pre>
+          <span id="result-12-2"></span>
         </div>
       </div>
     
