@@ -2,6 +2,7 @@
 # Utils
 "/www/subjects/names.json" = "./names.json"
 "/www/script/utils/utils.py"= "./utils.py"
+"/www/script/utils/loading.py"= "./loading.py"
 
 # Day 1
 "/www/subjects/day_1-1.txt" = "./day_1_1.txt"
