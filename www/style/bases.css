@@ -26,3 +26,11 @@ pre {
 a::before {
     content: ">";
 }
+
+.nav-tabs .nav-link {
+    transition: None;
+}
+.nav-tabs .nav-link[disabled] {
+    background-color: #a0a6ab !important;
+    color: white;
+}
