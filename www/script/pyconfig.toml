@@ -30,3 +30,10 @@
 "/www/script/days/fragments/day_4-1.py" = "./day_4_1.py"
 "/www/script/days/fragments/day_4-2.py" = "./day_4_2.py"
 "/www/subjects/inputs/day_4.txt" = "./input_4.txt"
+
+# Day 5
+"/www/subjects/day_5-1.txt" = "./day_5_1.txt"
+"/www/subjects/day_5-2.txt" = "./day_5_2.txt"
+"/www/script/days/fragments/day_5-1.py" = "./day_5_1.py"
+"/www/script/days/fragments/day_5-2.py" = "./day_5_2.py"
+"/www/subjects/inputs/day_5.txt" = "./input_5.txt"
