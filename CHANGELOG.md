@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add solutions for day 6.
 - Add progress bar and disable button for day when loading script
 - Add solutions for day 5.
 - Add solutions for day 4.

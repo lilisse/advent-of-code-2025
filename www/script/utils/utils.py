@@ -10,6 +10,9 @@ def get_content_of_input(file_path: str) -> str:
 def parse_input_eol(content: str) -> list[str]:
     return content.strip().split("\n")
 
+def parse_input_eol_without_strip(content: str) -> list[str]:
+    return content.split("\n")
+
 def parse_input_coma(input: str) -> list[str]:
     return input.strip().split(",")
 
