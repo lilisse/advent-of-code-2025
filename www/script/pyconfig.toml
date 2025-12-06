@@ -38,3 +38,11 @@
 "/www/script/days/fragments/day_5-1.py" = "./day_5_1.py"
 "/www/script/days/fragments/day_5-2.py" = "./day_5_2.py"
 "/www/subjects/inputs/day_5.txt" = "./input_5.txt"
+
+# Day 6
+"/www/subjects/day_6-1.txt" = "./day_6_1.txt"
+"/www/subjects/day_6-2.txt" = "./day_6_2.txt"
+"/www/script/days/fragments/day_6-1.py" = "./day_6_1.py"
+"/www/script/days/fragments/day_6-2.py" = "./day_6_2.py"
+"/www/subjects/inputs/day_6.txt" = "./input_6.txt"
+# "/www/subjects/inputs/day_6_ex.txt" = "./input_6_ex.txt"
