@@ -45,4 +45,10 @@
 "/www/script/days/fragments/day_6-1.py" = "./day_6_1.py"
 "/www/script/days/fragments/day_6-2.py" = "./day_6_2.py"
 "/www/subjects/inputs/day_6.txt" = "./input_6.txt"
-# "/www/subjects/inputs/day_6_ex.txt" = "./input_6_ex.txt"
+
+# Day 7
+"/www/subjects/day_7-1.txt" = "./day_7_1.txt"
+"/www/subjects/day_7-2.txt" = "./day_7_2.txt"
+"/www/script/days/fragments/day_7-1.py" = "./day_7_1.py"
+"/www/script/days/fragments/day_7-2.py" = "./day_7_2.py"
+"/www/subjects/inputs/day_7.txt" = "./input_7.txt"
