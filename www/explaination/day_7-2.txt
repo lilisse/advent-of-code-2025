@@ -1,0 +1,60 @@
+# TODO: dans l'explication expliquer que calculer tout les arbre possible
+# prend trop de ressource (j'ai essayé et ça marche mais un moment lordianteur ne veut
+# plus, voir msg pym). J'ai a donc changer d'approche.
+# On remarque que le nombre de faiseau qui arrive sur un separateur peut venir que du S
+# ou d'un autre separateur. Pour cela le separateur doit etre au dessus et imediatement
+# en diagonal. Aussi un separateur ne peut recevoir de faiseaux que des separateur adjacent
+# et non dee separateur de la meme colonne.
+# ..^..
+# .....
+# ..^..
+# Le 2eme ^ ne recoit pas de faiseaux car devier par le premier. "oui mais si
+# c'est devierr et redevier". Pour cet exemple
+# ..^..
+# .....
+# .^.^.
+# .....
+# ..^..
+# Le troisieme ^ recoit des faiseaux des ^ 2 et 3 et non de celui au dessus de lui
+# directement donc on compte 2 faiseau pour lui et non 3.
+# Pour trouver le nombre de chemin possible on peut donc compter pour chaque
+# separateur le nombre de faisceaux qui peut lui parvenir et les compteur
+#
+def solve(parsed_input: list[str]) -> int:
+    splitters_column = [
+        col
+        for line in parsed_input
+        for col, x in enumerate(line) if x == "^"
+    ]
+    print(splitters_column)
+    # pour le premier il y a forcement le faiseau du start et pour l'instant 0 pour les
+    # autres
+    beams_can_enter = [1] + [0] * (len(splitters_column) - 1)
+    print(f"{beams_can_enter = }")
+
+    for idx, splitter_idx in enumerate(splitters_column):
+        # pour chaque splitter on regarde si des splitter precedent peuvent lui envoyer des
+        # faiseaux
+        for prev_idx, prev_splitter_idx in enumerate(splitters_column[:idx][::-1]):
+            # Si un splitter est dans la meme colonne pas besoin de compter car il peut pas
+            # lui envoyer de faiseaux
+            if splitter_idx == prev_splitter_idx:
+                break
+            # si la difference de position entr ele splitter actuel `splitter_idx` et un
+            # splitter precedent (prev_splitter_idx) est de 1 (ou -1 resolut avec `abs`)
+            if abs(splitter_idx - prev_splitter_idx) == 1:
+                #  Comme on parcoure les splitters precedent de facon inverse
+                # exemple si slpitters=[7, 3, 6] et que l'on ait sur 6 la seonde list
+                # parcour les précedent dasn cette ordre [3, 7] (du plus proche au plus eloigné)
+                # On doit retrouver l'index original dans splitters. Exemple si on traite 6
+                # on arrive ici que avec 7 car abs(6-7) == 1. On prend l'index de de 6 (2)
+                # et on enleve l'index de 7 dans l'ordre inverse (1) 2-1 = 1 puis on eneleve
+                # 1 car c'est l'element precedent et comme on commence avec prev_idx = 0 et
+                # l'index de prev dans splitters est equal a idx - (idx_prev + 1)
+                # equivalent à idx - prev_idx - 1
+                original_idx_of_prev = idx - prev_idx - 1
+                beams_can_enter[idx] += beams_can_enter[original_idx_of_prev]
+
+    # On compte le nombre de faiseaux qui sont passer par un splitter et on ajoute 1 car
+    # pour la goutter original
+    return sum(beams_can_enter) + 1
