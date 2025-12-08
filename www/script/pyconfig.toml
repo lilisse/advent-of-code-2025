@@ -1,3 +1,4 @@
+packages = ["networkx"]
 [files]
 # Utils
 "/www/subjects/names.json" = "./names.json"
@@ -52,3 +53,11 @@
 "/www/script/days/fragments/day_7-1.py" = "./day_7_1.py"
 "/www/script/days/fragments/day_7-2.py" = "./day_7_2.py"
 "/www/subjects/inputs/day_7.txt" = "./input_7.txt"
+
+# Day 8
+"/www/subjects/day_8-1.txt" = "./day_8_1.txt"
+"/www/subjects/day_8-2.txt" = "./day_8_2.txt"
+"/www/script/days/fragments/day_8-1.py" = "./day_8_1.py"
+"/www/script/days/fragments/day_8-2.py" = "./day_8_2.py"
+"/www/subjects/inputs/day_8.txt" = "./input_8.txt"
+"/www/subjects/inputs/day_8_ex.txt" = "./input_8_ex.txt"
