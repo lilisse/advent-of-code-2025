@@ -1,4 +1,4 @@
-packages = ["networkx"]
+packages = ["networkx", "shapely"]
 [files]
 # Utils
 "/www/subjects/names.json" = "./names.json"
@@ -60,4 +60,10 @@ packages = ["networkx"]
 "/www/script/days/fragments/day_8-1.py" = "./day_8_1.py"
 "/www/script/days/fragments/day_8-2.py" = "./day_8_2.py"
 "/www/subjects/inputs/day_8.txt" = "./input_8.txt"
-"/www/subjects/inputs/day_8_ex.txt" = "./input_8_ex.txt"
+
+# Day 9
+"/www/subjects/day_9-1.txt" = "./day_9_1.txt"
+"/www/subjects/day_9-2.txt" = "./day_9_2.txt"
+"/www/script/days/fragments/day_9-1.py" = "./day_9_1.py"
+"/www/script/days/fragments/day_9-2.py" = "./day_9_2.py"
+"/www/subjects/inputs/day_9.txt" = "./input_9.txt"
