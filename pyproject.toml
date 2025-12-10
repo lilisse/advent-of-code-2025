@@ -11,6 +11,8 @@ jinja2-cli = "^0.8.2"
 networkx = "^3.6"
 matplotlib = "^3.10.7"
 shapely = "^2.1.2"
+z3-solver = "^4.15.4.0"
+numpy = "^2.3.5"
 
 
 [build-system]
