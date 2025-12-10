@@ -67,3 +67,9 @@ packages = ["networkx", "shapely"]
 "/www/script/days/fragments/day_9-1.py" = "./day_9_1.py"
 "/www/script/days/fragments/day_9-2.py" = "./day_9_2.py"
 "/www/subjects/inputs/day_9.txt" = "./input_9.txt"
+
+# Day 10
+"/www/subjects/day_10-1.txt" = "./day_10_1.txt"
+"/www/subjects/day_10-2.txt" = "./day_10_2.txt"
+"/www/script/days/fragments/day_10-1.py" = "./day_10_1.py"
+"/www/script/days/fragments/day_10-2.py" = "./day_10_2.py"
