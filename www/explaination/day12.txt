@@ -1,0 +1,1 @@
+Expliquer le backtracking avec lexemple et que sur certains ca peut prendre un temps infini (exemple 3)
