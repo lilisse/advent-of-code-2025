@@ -3,8 +3,6 @@ from pyscript import display
 from utils import (
     display_a_file,
     display_day_name,
-    get_content_of_input,
-    parse_input_eol,
 )
 
 result_ex_1 = 469

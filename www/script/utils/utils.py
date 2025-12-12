@@ -13,6 +13,9 @@ def parse_input_eol(content: str) -> list[str]:
 def parse_input_eol_without_strip(content: str) -> list[str]:
     return content.split("\n")
 
+def strip_input(content: str) -> str:
+    return content.strip()
+
 def parse_input_coma(input: str) -> list[str]:
     return input.strip().split(",")
 
