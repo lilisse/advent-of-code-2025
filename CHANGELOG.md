@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add solutions for day 12.
 - Add solutions for day 11.
 - Add solutions for day 10.
 - Add solutions for day 9.
