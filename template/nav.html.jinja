@@ -1,0 +1,23 @@
+<nav class="nav nav-tabs container mt-3" role="tablist">
+  {#<a role="button" class="nav-link border" href="/public/presentation.html">Presentation</a>#}
+
+  {% if day_number == "presentation" %}
+    <a role="button" class="nav-link border" href="/" disabled>Presentation</a>
+  {% else %}
+    <a role="button" class="nav-link border" href="/">Presentation</a>
+  {% endif %}
+
+  {% for idx in range(12) %}
+    {% if idx+1 == day_number %}
+      <a role="button" class="nav-link border" href="/public/days/day_{{ idx+1 }}.html" disabled>Day {{ idx+1 }}</a>
+    {% else %}
+      <a role="button" class="nav-link border" href="/public/days/day_{{ idx+1 }}.html">Day {{ idx+1 }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if day_number == "utils" %}
+    <a role="button" class="nav-link border" href="/public/utils.html" disabled>Utils</a>
+  {% else %}
+    <a role="button" class="nav-link border" href="/public/utils.html">Utils</a>
+  {% endif %}
+</nav>

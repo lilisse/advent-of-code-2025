@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    {% include 'header.html' %}
+    {% include 'header.html.jinja' %}
     {% block js_and_css %} {% endblock %}
   </head>
   <body>
@@ -9,5 +9,5 @@
       {% block content %}{% endblock %}
     </div>
   </body>
-  {% include 'footer.html' %}
+  {% include 'footer.html.jinja' %}
 </html>

@@ -1,6 +1,6 @@
 from day_11_1 import solve as solve_ex_1
 from day_11_2 import solve as solve_ex_2
-from loading import moved_progress_bar
+from loading import remove_loading_spinner
 from pyscript import display
 from utils import (
     display_a_file,
@@ -21,4 +21,4 @@ display_a_file("./day_11_2.py", "code-11-2")
 display(result_ex_1, target="result-11-1")
 display(result_ex_2, target="result-11-2")
 
-moved_progress_bar(11)
+remove_loading_spinner()
