@@ -44,7 +44,7 @@
       {% for exercice in range(1, 3) %}
         <div id="day{{ day_index }}-{{ exercice }}" class="mb-3">
           <h4 class="text-primary">
-            {% set exercice_link = day_link_1 if exercice == 1 else day_link_2 %}
+            {% set exercice_link = part_1 if exercice == 1 else part_2 %}
             <a href="{{ exercice_link }}">Exercice {{ exercice }} </a>
           </h4>
           <h5 class="ms-2 text-decoration-underline text-secondary">State</h5>
