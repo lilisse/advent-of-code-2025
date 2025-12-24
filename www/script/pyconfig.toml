@@ -11,6 +11,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_1-1.py" = "./day_1_1.py"
 "/script/days/fragments/day_1-2.py" = "./day_1_2.py"
 "/subjects/inputs/day_1.txt" = "./input_1.txt"
+"/explanation/day_1_1.txt" = "./explanation_day_1_1.txt"
+"/explanation/day_1_2.txt" = "./explanation_day_1_2.txt"
 
 # Day 2
 "/subjects/day_2-1.txt" = "./day_2_1.txt"
@@ -18,6 +20,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_2-1.py" = "./day_2_1.py"
 "/script/days/fragments/day_2-2.py" = "./day_2_2.py"
 "/subjects/inputs/day_2.txt" = "./input_2.txt"
+"/explanation/day_2_1.txt" = "./explanation_day_2_1.txt"
+"/explanation/day_2_2.txt" = "./explanation_day_2_2.txt"
 
 # Day 3
 "/subjects/day_3-1.txt" = "./day_3_1.txt"
@@ -25,6 +29,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_3-1.py" = "./day_3_1.py"
 "/script/days/fragments/day_3-2.py" = "./day_3_2.py"
 "/subjects/inputs/day_3.txt" = "./input_3.txt"
+"/explanation/day_3_1.txt" = "./explanation_day_3_1.txt"
+"/explanation/day_3_2.txt" = "./explanation_day_3_2.txt"
 
 # Day 4
 "/subjects/day_4-1.txt" = "./day_4_1.txt"
@@ -32,6 +38,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_4-1.py" = "./day_4_1.py"
 "/script/days/fragments/day_4-2.py" = "./day_4_2.py"
 "/subjects/inputs/day_4.txt" = "./input_4.txt"
+"/explanation/day_4_1.txt" = "./explanation_day_4_1.txt"
+"/explanation/day_4_2.txt" = "./explanation_day_4_2.txt"
 
 # Day 5
 "/subjects/day_5-1.txt" = "./day_5_1.txt"
@@ -39,6 +47,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_5-1.py" = "./day_5_1.py"
 "/script/days/fragments/day_5-2.py" = "./day_5_2.py"
 "/subjects/inputs/day_5.txt" = "./input_5.txt"
+"/explanation/day_5_1.txt" = "./explanation_day_5_1.txt"
+"/explanation/day_5_2.txt" = "./explanation_day_5_2.txt"
 
 # Day 6
 "/subjects/day_6-1.txt" = "./day_6_1.txt"
@@ -46,6 +56,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_6-1.py" = "./day_6_1.py"
 "/script/days/fragments/day_6-2.py" = "./day_6_2.py"
 "/subjects/inputs/day_6.txt" = "./input_6.txt"
+"/explanation/day_6_1.txt" = "./explanation_day_6_1.txt"
+"/explanation/day_6_2.txt" = "./explanation_day_6_2.txt"
 
 # Day 7
 "/subjects/day_7-1.txt" = "./day_7_1.txt"
@@ -53,6 +65,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_7-1.py" = "./day_7_1.py"
 "/script/days/fragments/day_7-2.py" = "./day_7_2.py"
 "/subjects/inputs/day_7.txt" = "./input_7.txt"
+"/explanation/day_7_1.txt" = "./explanation_day_7_1.txt"
+"/explanation/day_7_2.txt" = "./explanation_day_7_2.txt"
 
 # Day 8
 "/subjects/day_8-1.txt" = "./day_8_1.txt"
@@ -60,6 +74,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_8-1.py" = "./day_8_1.py"
 "/script/days/fragments/day_8-2.py" = "./day_8_2.py"
 "/subjects/inputs/day_8.txt" = "./input_8.txt"
+"/explanation/day_8_1.txt" = "./explanation_day_8_1.txt"
+"/explanation/day_8_2.txt" = "./explanation_day_8_2.txt"
 
 # Day 9
 "/subjects/day_9-1.txt" = "./day_9_1.txt"
@@ -67,12 +83,16 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_9-1.py" = "./day_9_1.py"
 "/script/days/fragments/day_9-2.py" = "./day_9_2.py"
 "/subjects/inputs/day_9.txt" = "./input_9.txt"
+"/explanation/day_9_1.txt" = "./explanation_day_9_1.txt"
+"/explanation/day_9_2.txt" = "./explanation_day_9_2.txt"
 
 # Day 10
 "/subjects/day_10-1.txt" = "./day_10_1.txt"
 "/subjects/day_10-2.txt" = "./day_10_2.txt"
 "/script/days/fragments/day_10-1.py" = "./day_10_1.py"
 "/script/days/fragments/day_10-2.py" = "./day_10_2.py"
+"/explanation/day_10_1.txt" = "./explanation_day_10_1.txt"
+"/explanation/day_10_2.txt" = "./explanation_day_10_2.txt"
 
 # Day 11
 "/subjects/day_11-1.txt" = "./day_11_1.txt"
@@ -80,6 +100,8 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_11-1.py" = "./day_11_1.py"
 "/script/days/fragments/day_11-2.py" = "./day_11_2.py"
 "/subjects/inputs/day_11.txt" = "./input_11.txt"
+"/explanation/day_11_1.txt" = "./explanation_day_11_1.txt"
+"/explanation/day_11_2.txt" = "./explanation_day_11_2.txt"
 
 # Day 12
 "/subjects/day_12-1.txt" = "./day_12_1.txt"
@@ -87,3 +109,5 @@ packages = ["networkx", "shapely"]
 "/script/days/fragments/day_12-1.py" = "./day_12_1.py"
 "/script/days/fragments/day_12-2.py" = "./day_12_2.py"
 "/subjects/inputs/day_12.txt" = "./input_12.txt"
+"/explanation/day_12_1.txt" = "./explanation_day_12_1.txt"
+"/explanation/day_12_2.txt" = "./explanation_day_12_2.txt"

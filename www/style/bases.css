@@ -72,3 +72,7 @@ a:not(nav a)::before {
         opacity: 0.3;
     }
 }
+
+.text-explanation {
+    color: #ca7c0a;
+}

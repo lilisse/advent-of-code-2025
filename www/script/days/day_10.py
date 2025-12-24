@@ -11,8 +11,10 @@ result_ex_2 = 19293
 
 display_day_name("10", "day-title-10")
 display_a_file("./day_10_1.txt", "state-10-1")
+display_a_file("./explanation_day_10_1.txt", "explanation-10-1")
 display_a_file("./day_10_1.py", "code-10-1")
 display_a_file("./day_10_2.txt", "state-10-2")
+display_a_file("./explanation_day_10_2.txt", "explanation-10-2")
 display_a_file("./day_10_2.py", "code-10-2")
 display(result_ex_1, target="result-10-1")
 display(result_ex_2, target="result-10-2")

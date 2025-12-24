@@ -16,8 +16,10 @@ result_ex_2 = solve_ex_2(parse_input_eol_without_strip(get_content_of_input("./i
 
 display_day_name("6", "day-title-6")
 display_a_file("./day_6_1.txt", "state-6-1")
+display_a_file("./explanation_day_6_1.txt", "explanation-6-1")
 display_a_file("./day_6_1.py", "code-6-1")
 display_a_file("./day_6_2.txt", "state-6-2")
+display_a_file("./explanation_day_6_2.txt", "explanation-6-2")
 display_a_file("./day_6_2.py", "code-6-2")
 display(result_ex_1, target="result-6-1")
 display(result_ex_2, target="result-6-2")

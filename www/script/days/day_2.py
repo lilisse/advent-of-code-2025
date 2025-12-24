@@ -19,8 +19,10 @@ result_ex_2 = solve_ex_2(
 
 display_day_name("2", "day-title-2")
 display_a_file("./day_2_1.txt", "state-2-1")
+display_a_file("./explanation_day_2_1.txt", "explanation-2-1")
 display_a_file("./day_2_1.py", "code-2-1")
 display_a_file("./day_2_2.txt", "state-2-2")
+display_a_file("./explanation_day_2_2.txt", "explanation-2-2")
 display_a_file("./day_2_2.py", "code-2-2")
 display(result_ex_1, target="result-2-1")
 display(result_ex_2, target="result-2-2")
