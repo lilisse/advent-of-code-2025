@@ -1,0 +1,41 @@
+{% extends 'base.html.jinja' %}
+{% block title %} Advent of code 2025 - Utils {% endblock %}
+{% block js_and_css %}
+  <script
+    type="py"
+    src="/script/display_utils.py"
+    config="/script/pyconfig.toml"
+  ></script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid">
+  {% include 'intro.html.jinja' %}
+  {% with day_number=day_index %}
+    {% include 'nav.html.jinja' %}
+  {% endwith %}
+  <div
+    id="utils"
+    class="container border border-dark border-4 rounded-3 my-4"
+  >
+    <div id="loading-spinner" class="d-flex justify-content-center">
+      <div class="spinner-grow pixel-square text-primary my-3" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow pixel-square text-primary my-3 mx-1" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow pixel-square text-primary my-3" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <h2 class="mt-2" id="utils-title"></h2>
+    <div class="container">
+      <div class="mb-3">
+        <div class="ms-4 spoiler">
+          <pre class="rounded ps-2" id="code-utils"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

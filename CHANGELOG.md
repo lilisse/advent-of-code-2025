@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Change struct to display each day in a single page.
 - Change css for link to add ">" before a link.
 - Change index page to add a tab for utils code.
 - Change index page to get tabs systems for days.
